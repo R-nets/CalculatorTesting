@@ -1,7 +1,12 @@
 /**
  * A calculator that performs binary operations.
+ * <p>
+ * This class allows setting a binary operation and performing calculations
+ * using that operation.
+ * </p>
  * 
- * @author Kyle Robert Harrison
+ * @author [Roy]
+ * @date 17 Sep 2025
  * @version 1.0, 6 Mar 2025
  */
 public class Calculator {
@@ -25,6 +30,7 @@ public class Calculator {
      * @param a The left side of the operation.
      * @param b The right side of the operation.
      * @return The result of the operation.
+     * @throws IllegalStateException if the operation is not set.
      */
     public double calculate(double a, double b) {
         if (operation == null) {
